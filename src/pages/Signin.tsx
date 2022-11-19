@@ -26,7 +26,7 @@ export default function Signin() {
         localStorage.setItem("token", res.data.token);
         navigate("/home");
       } catch (err) {
-        console.log(err?.response?.data?.error);
+        setError(err?.response?.data?.error);
       }
     }
   };
@@ -45,7 +45,7 @@ export default function Signin() {
           type={"text"}
           value={userName}
           onChange={(event: any) => setUserName(event.target.value)}
-          placeholder="Digite seu e-mail"
+          placeholder="Digite seu nome"
         />
 
         <Input
