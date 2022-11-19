@@ -1,0 +1,29 @@
+.header {
+  margin-bottom: 100px;
+  color: aliceblue;
+}
+
+.transfer-section {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.transfer-section input {
+  width: 150px;
+}
+
+.btn-transfer {
+  background: blueviolet;
+  width: 100px;
+}
+
+.btn-transfer:hover {
+  background: rgb(91, 28, 150);
+}
+
+.transfer-error {
+  margin-top: 10px;
+  margin-left: 10px;
+  font-size: larger;
+}

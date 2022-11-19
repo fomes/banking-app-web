@@ -4,12 +4,18 @@ import "../styles/button.css";
 interface ButtonPropos {
   text: string;
   type: "button" | "submit" | "reset" | undefined;
-  onClick: () => void;
+  onClick: any;
+  className?: string;
 }
 
-export default function Button({ text, type, onClick }: ButtonPropos) {
+export default function Button({
+  text,
+  type,
+  onClick,
+  className,
+}: ButtonPropos) {
   return (
-    <button type={type} onClick={onClick}>
+    <button type={type} onClick={onClick} className={className}>
       {text}
     </button>
   );

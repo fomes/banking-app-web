@@ -3,7 +3,7 @@ import "../styles/input.css";
 
 interface InputProps {
   type: string;
-  value: any;
+  value?: any;
   onChange: any;
   placeholder: string;
 }

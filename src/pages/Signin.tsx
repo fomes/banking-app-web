@@ -23,6 +23,7 @@ export default function Signin() {
           password,
         });
 
+        localStorage.setItem("user", userName);
         localStorage.setItem("token", res.data.token);
         navigate("/home");
       } catch (err) {
