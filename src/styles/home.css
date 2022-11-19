@@ -1,5 +1,5 @@
 .header {
-  margin-bottom: 100px;
+  margin-bottom: 50px;
   color: aliceblue;
 }
 
@@ -11,19 +11,58 @@
 
 .transfer-section input {
   width: 150px;
+  height: 49px;
 }
 
 .btn-transfer {
-  background: blueviolet;
-  width: 100px;
+  width: 120px !important;
 }
 
 .btn-transfer:hover {
-  background: rgb(91, 28, 150);
+  background: #ffff;
 }
 
 .transfer-error {
   margin-top: 10px;
   margin-left: 10px;
   font-size: larger;
+}
+
+.history {
+  color: aliceblue;
+  margin-top: 50px;
+}
+
+th,
+td {
+  border: 1px solid black;
+  padding: 8px;
+}
+
+table {
+  border-collapse: collapse;
+  border: 1px solid black;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.thead {
+  width: 25%;
+  background: cornflowerblue;
+  color: white;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 2%;
+}
+
+.thead td {
+  font-weight: 600;
+}
+
+caption {
+  font-weight: 600;
+  font-weight: bold;
+  font-size: 24px;
+  text-align: left;
+  margin-bottom: 16px;
 }

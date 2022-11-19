@@ -21,6 +21,10 @@
   border-radius: 5px;
 }
 
+.btn-login {
+  width: 350px;
+}
+
 .label {
   font-size: 18px;
   font-weight: 600;

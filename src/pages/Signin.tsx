@@ -57,7 +57,12 @@ export default function Signin() {
         />
 
         <div className="label-error">{error}</div>
-        <Button text="Entrar" type="button" onClick={handleLogin} />
+        <Button
+          text="Entrar"
+          type="button"
+          onClick={handleLogin}
+          className={"btn-login"}
+        />
 
         <div className="label-signup">
           <span>Não tem uma conta? </span>

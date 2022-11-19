@@ -25,7 +25,6 @@ export const handleTransfer = async (
     alert("Transferência realizada com sucesso!");
     location.reload();
   } catch (err) {
-    setError("");
-    console.log(err);
+    alert(err?.response?.data?.error);
   }
 };

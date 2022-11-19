@@ -63,7 +63,12 @@ export default function Signup() {
         />
 
         <div className="label-error">{error}</div>
-        <Button text="Cadastrar" type="button" onClick={handleSignUp} />
+        <Button
+          text="Cadastrar"
+          type="button"
+          onClick={handleSignUp}
+          className="btn-login"
+        />
 
         <div className="label-signup">
           <span>Já tem uma conta? </span>
