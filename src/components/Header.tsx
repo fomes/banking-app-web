@@ -4,12 +4,12 @@ import Input from "./Input";
 
 interface HeaderProps {
   name: string | null;
-  token: string;
+  token: string | null;
   amount: string;
   balance: number;
   userTarget: string;
-  setAmount: any;
-  setUserTarget: any;
+  setAmount: Function;
+  setUserTarget: Function;
   handleLogOut: () => void;
   handleTransfer: () => void;
 }
@@ -22,7 +22,6 @@ export default function Header({
   setUserTarget,
   handleTransfer,
 }: HeaderProps) {
-  
   return (
     <>
       <div className="header">

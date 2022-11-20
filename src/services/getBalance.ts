@@ -1,7 +1,7 @@
 import { api } from "./api";
 
 export const getBalance = async (
-  token: any,
+  token: string | null,
   setBalance: (value: any) => void
 ) => {
   try {

@@ -44,21 +44,27 @@ export default function Signup() {
         <Input
           type={"text"}
           value={userName}
-          onChange={(event: any) => setUserName(event.target.value)}
+          onChange={(event: React.FormEvent<HTMLInputElement>) =>
+            setUserName(event.currentTarget.value)
+          }
           placeholder="Digite seu nome"
         />
 
         <Input
           type={"password"}
           value={password}
-          onChange={(event: any) => setPassword(event.target.value)}
+          onChange={(event: React.FormEvent<HTMLInputElement>) =>
+            setPassword(event.currentTarget.value)
+          }
           placeholder="Digite sua senha"
         />
 
         <Input
           type={"password"}
           value={confirmPassword}
-          onChange={(event: any) => setConfirmPassword(event.target.value)}
+          onChange={(event: React.FormEvent<HTMLInputElement>) =>
+            setConfirmPassword(event.currentTarget.value)
+          }
           placeholder="Confirme sua senha"
         />
 

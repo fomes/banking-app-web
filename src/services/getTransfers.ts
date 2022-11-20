@@ -1,7 +1,7 @@
 import { api } from "./api";
 
 export const getTransfers = async (
-  token: any,
+  token: string | null,
   setTransfersList: (value: any) => void
 ) => {
   try {

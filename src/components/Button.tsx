@@ -4,7 +4,7 @@ import "../styles/button.css";
 interface ButtonPropos {
   text: string;
   type: "button" | "submit" | "reset" | undefined;
-  onClick: any;
+  onClick: () => void;
   className?: string;
 }
 
