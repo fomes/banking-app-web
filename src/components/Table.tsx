@@ -19,6 +19,7 @@ export default function Table({ transfersList }: any) {
           <td>Origem</td>
           <td>Destino</td>
           <td>Data</td>
+          <td>Hora</td>
         </tr>
         {transfersList?.map((item: TableProps, index: number) => (
           <tr key={index}>
@@ -26,7 +27,8 @@ export default function Table({ transfersList }: any) {
             <td>R$ {item.value}</td>
             <td>{item.debitedAccountId}</td>
             <td>{item.creditedAccountId}</td>
-            <td>{item.createdAt}</td>
+            <td>{new Date(item.createdAt).toISOString().substring(0, 10)}</td>
+            <td>{new Date(item.createdAt).toTimeString().substring(0, 9)}</td>
           </tr>
         ))}
       </tbody>
