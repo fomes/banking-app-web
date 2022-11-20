@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import Button from "../components/button";
-import Input from "../components/input";
+import Button from "../components/Button";
+import Input from "../components/Input";
 import { api } from "../services/api";
 
 export default function Signup() {
