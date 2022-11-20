@@ -9,3 +9,5 @@ services:
     image: app:react
     container_name: react_container
     command: npm start
+
+# dokcer compose run app
