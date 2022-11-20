@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import Swal from "sweetalert2";
 import Button from "../components/Button";
 import Input from "../components/Input";
 import { api } from "../services/api";
@@ -21,7 +22,12 @@ export default function Signup() {
           password,
         });
 
-        alert("Usuário cadastrado com sucesso!");
+        Swal.fire({
+          icon: "success",
+          title: "Success",
+          text: "Usuário cadastrado com sucesso!",
+        });
+
         setUserName("");
         setPassword("");
         setConfirmPassword("");

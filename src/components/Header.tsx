@@ -30,6 +30,7 @@ export default function Header({
         <Button text="Sair" type="button" onClick={handleLogOut} />
       </div>
 
+      <h1 className="transfer-section-title">Transferir para:</h1>
       <div className="transfer-section">
         <Input type="text" placeholder="Username" onChange={setUserTarget} />
 

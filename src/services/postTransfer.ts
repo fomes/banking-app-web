@@ -1,10 +1,10 @@
+import Swal from "sweetalert2";
 import { api } from "./api";
 
 export const handleTransfer = async (
   userTarget: string,
   amount: number,
-  token: string | null,
-  setError: (value: string) => void
+  token: string | null
 ) => {
   try {
     await api.post(
@@ -22,9 +22,18 @@ export const handleTransfer = async (
       }
     );
 
-    alert("Transferência realizada com sucesso!");
-    location.reload();
+    Swal.fire({
+      icon: "success",
+      title: "Success",
+      text: "Transferência realizada com sucesso!!",
+    }).then(() => {
+      location.reload();
+    });
   } catch (err: any) {
-    alert(err?.response?.data?.error);
+    Swal.fire({
+      icon: "error",
+      title: "Error",
+      text: err?.response?.data?.error,
+    });
   }
 };

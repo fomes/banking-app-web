@@ -54,12 +54,12 @@ export default function Home() {
             handleTransfer={() =>
               handleTransfer(userTarget, Number(amount), token, setUserTarget)
             }
-          ></Header>
+          />
 
           <div className="label-error transfer-error">{error}</div>
 
           <div className="history">
-            <Table transfersList={transfersList} />
+            <Table data={transfersList} />
           </div>
         </div>
       ) : (

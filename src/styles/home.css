@@ -9,6 +9,10 @@
   gap: 10px;
 }
 
+.transfer-section-title {
+  color: aliceblue;
+}
+
 .transfer-section input {
   width: 150px;
   height: 49px;
@@ -31,38 +35,4 @@
 .history {
   color: aliceblue;
   margin-top: 50px;
-}
-
-th,
-td {
-  border: 1px solid black;
-  padding: 8px;
-}
-
-table {
-  border-collapse: collapse;
-  border: 1px solid black;
-  text-align: center;
-  vertical-align: middle;
-}
-
-.thead {
-  width: 25%;
-  background: cornflowerblue;
-  color: white;
-  font-size: 0.875rem;
-  text-transform: uppercase;
-  letter-spacing: 2%;
-}
-
-.thead td {
-  font-weight: 600;
-}
-
-caption {
-  font-weight: 600;
-  font-weight: bold;
-  font-size: 24px;
-  text-align: left;
-  margin-bottom: 16px;
 }
