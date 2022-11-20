@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 import Button from "../components/Button";
 import Input from "../components/Input";
@@ -10,6 +10,8 @@ export default function Signup() {
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const [error, setError] = useState("");
+
+  const navigate = useNavigate();
 
   const handleSignUp = async () => {
     if (!userName || !password || !confirmPassword) {
@@ -27,6 +29,8 @@ export default function Signup() {
           title: "Success",
           text: "Usuário cadastrado com sucesso!",
         });
+
+        navigate("/");
 
         setUserName("");
         setPassword("");
