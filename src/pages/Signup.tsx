@@ -25,7 +25,7 @@ export default function Signup() {
         setUserName("");
         setPassword("");
         setConfirmPassword("");
-      } catch (err) {
+      } catch (err: any) {
         setError(err?.response?.data?.error);
       }
     }

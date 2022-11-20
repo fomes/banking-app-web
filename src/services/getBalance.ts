@@ -11,7 +11,7 @@ export const getBalance = async (
       },
     });
 
-    setBalance(resp.data.balance.balance);
+    setBalance(resp?.data?.balance?.balance);
   } catch (err) {
     console.log(err);
   }

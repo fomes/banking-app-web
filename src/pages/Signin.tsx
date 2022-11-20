@@ -26,7 +26,7 @@ export default function Signin() {
         localStorage.setItem("user", userName);
         localStorage.setItem("token", res.data.token);
         navigate("/home");
-      } catch (err) {
+      } catch (err: any) {
         setError(err?.response?.data?.error);
       }
     }
