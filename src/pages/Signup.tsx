@@ -32,6 +32,14 @@ export default function Signup() {
   };
 
   useEffect(() => {
+    if (password !== confirmPassword) {
+      setError("Passord does not match!");
+    } else {
+      setError("");
+    }
+  }, [password, confirmPassword]);
+
+  useEffect(() => {
     if (userName || password) {
       setError("");
     }
