@@ -1,9 +1,11 @@
 FROM node:16-alpine3.16
 
-WORKDIR /ng-web
+WORKDIR /web
+
+COPY package*.json ./
+
+RUN npm install
 
 COPY . .
 
-RUN npm run build
-
-CMD [ "npm", "dev" ]
+CMD [ "npm", "start" ]
