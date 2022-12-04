@@ -63,7 +63,7 @@ export default function Home() {
           </div>
         </div>
       ) : (
-        <h1>Não autorizado!</h1>
+        <h1 className="no-auth-title">Não autorizado!</h1>
       )}
     </>
   );
