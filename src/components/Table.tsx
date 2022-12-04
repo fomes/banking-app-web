@@ -10,26 +10,26 @@ export const Table = (props: any) => {
       selector: "id",
       sortable: true,
       grow: 2,
-      width: "250px",
+      width: "16%",
     },
     {
       name: "Valor",
       selector: (row: any) => "R$ " + row.value,
       grow: 2,
-      width: "100px",
+      width: "6%",
     },
     {
       name: "Conta Origem",
       selector: "debitedAccountId",
       sortable: true,
       hide: "sm",
-      width: "300px",
+      width: "20%",
     },
     {
       name: "Conta Destino",
       selector: "creditedAccountId",
       sortable: true,
-      width: "300px",
+      width: "20%",
     },
     {
       name: "Data",
@@ -37,7 +37,7 @@ export const Table = (props: any) => {
         new Date(row.createdAt).toISOString().substring(0, 10),
       sortable: true,
       hide: "md",
-      width: "150px",
+      width: "10%",
     },
     {
       name: "Hora",
@@ -45,7 +45,7 @@ export const Table = (props: any) => {
         new Date(row.createdAt).toTimeString().substring(0, 9),
       sortable: true,
       hide: "md",
-      width: "150px",
+      width: "10%",
     },
   ];
 

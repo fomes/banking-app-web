@@ -1,11 +1,10 @@
 .header {
-  margin-bottom: 50px;
   color: aliceblue;
 }
 
 .transfer-section {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   gap: 10px;
 }
 
@@ -18,12 +17,28 @@
   height: 49px;
 }
 
+.btn-new-transfer {
+  display: block;
+}
+
 .btn-transfer {
-  width: 120px !important;
+  width: 150px !important;
 }
 
 .btn-transfer:hover {
   background: #ffff;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.visisble {
+  visibility: visible;
+}
+
+.hidden {
+  visibility: hidden;
 }
 
 .transfer-error {
@@ -34,5 +49,4 @@
 
 .history {
   color: aliceblue;
-  margin-top: 50px;
 }

@@ -52,7 +52,7 @@ export default function Home() {
               setUserTarget(event.currentTarget.value)
             }
             handleTransfer={() =>
-              handleTransfer(userTarget, Number(amount), token, setUserTarget)
+              handleTransfer(userTarget, Number(amount), token)
             }
           />
 

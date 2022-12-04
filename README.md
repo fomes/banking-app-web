@@ -1,7 +1,7 @@
 
-# NGcash Challenge - Front-End
+# Banking App - Front-End
 
-NGcash APP
+Banking App
 
 
 ## Executar

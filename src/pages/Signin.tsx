@@ -40,7 +40,7 @@ export default function Signin() {
 
   return (
     <div className="container">
-      <div className="label">NG LOGIN</div>
+      <div className="label">LOGIN</div>
       <div className="content">
         <Input
           type={"text"}
