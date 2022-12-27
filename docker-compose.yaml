@@ -1,0 +1,38 @@
+// use this file on root folder
+
+//root-
+  // web-
+  // api-
+
+version: '3.8'
+
+services:
+  web:
+    build: ./ng-web
+    volumes:
+      - "./ng-web:/app"
+    ports:
+      - "3000:3000"
+    depends_on:
+      - api
+
+  api:
+    build: ./ng-api
+    volumes:
+      - "./ng-api:/app"
+    ports:
+      - "3333:3333"
+    depends_on:
+      - db
+
+  db:
+    image: postgres:12.13-alpine
+    restart: always
+    environment:
+      POSTGRES_DATABASE: postgres
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./postgres-data:/var/lib/postgresql/data
